@@ -1,0 +1,303 @@
+@charset "UTF-8";
+@import url("null-styles.css");
+.container {
+  max-width: 620px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+span {
+  color: brown;
+}
+
+.hr {
+  height: 3px;
+  border: none;
+  background-color: brown;
+  margin: 35px 0 0 0;
+}
+
+.smooth-appierence {
+  -webkit-animation-name: smooth-appierence;
+          animation-name: smooth-appierence;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+}
+main .teacher {
+  background-color: rgba(218, 187, 152, 0.33);
+}
+main .teacher .container {
+  text-align: center;
+}
+main .teacher .container .photo {
+  height: 500px;
+  border-radius: 0 0 20px 20px;
+  background-image: url("../images/мария.jpg");
+  background-position: top center;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+main .teacher .container .photo .cover-text {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  bottom: 40px;
+  background-color: rgba(167, 86, 86, 0.5);
+  width: 100%;
+}
+main .teacher .container .fio {
+  font-size: 35px;
+}
+main .teacher .container .division {
+  margin: 10px 0 0 0;
+  font-size: 35px;
+}
+main .teacher .container .division,
+main .teacher .container .who-are-teacher {
+  color: brown;
+  font-size: 35px;
+}
+main .teacher .container .contact {
+  margin: 10px 0 0 0;
+}
+main .teacher .container .contact .vk-tg,
+main .teacher .container .contact .about-me {
+  display: flex;
+}
+main .teacher .container .contact .vk-tg a,
+main .teacher .container .contact .about-me a {
+  flex: 1;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(254, 188, 107);
+  padding: 15px 30px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  border: 3px solid brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  transition: transform 0.1s;
+}
+main .teacher .container .contact .vk-tg a img,
+main .teacher .container .contact .about-me a img {
+  display: inline-block;
+  max-width: 40px;
+  margin: 0 10px;
+}
+main .teacher .container .contact .vk-tg a:hover,
+main .teacher .container .contact .about-me a:hover {
+  transform: translateY(-10px);
+  background-color: rgb(243, 176, 94);
+}
+main .teacher .container .contact .about-me a:hover {
+  transform: scale(1.05);
+}
+main .why-me {
+  margin: 30px 0 0 0;
+}
+main .why-me .container .why-me-argument {
+  font-size: 30px;
+  padding: 50px 0 50px 200px;
+  background-image: url("../images/f263ebc2-5ac9-4d3d-abe7-2a40309d7bdd.jfif");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+main .why-me .container ul {
+  list-style-type: none;
+}
+main .why-me .container ul li {
+  margin: 5px 0;
+  font-size: 25px;
+  font-style: italic;
+}
+main .why-me .container ul li::before {
+  content: "✓";
+  margin: 0 5px 0 0;
+  font-size: 30px;
+}
+main .submit-application {
+  margin: 30px 0 0 0;
+}
+main .submit-application .container > p {
+  font-size: 35px;
+  color: brown;
+}
+main .submit-application .container .lessions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .submit-application .container .lessions .lession {
+  margin: 30px 0 0 0;
+  opacity: 0;
+}
+main .submit-application .container .lessions .lession .lession-body {
+  max-width: 450px;
+  margin: auto;
+  height: 370px;
+  border: 2px solid black;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(218, 187, 152, 0.33);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .submit-application .container .lessions .lession .lession-body div {
+  font-size: 25px;
+}
+main .submit-application .container .lessions .lession .lession-body .lession-name {
+  font-weight: 700;
+}
+main .submit-application .container .lessions .lession .lession-sign-up {
+  position: relative;
+}
+main .submit-application .container .lessions .lession .lession-sign-up .sign-up {
+  text-align: center;
+}
+main .submit-application .container .lessions .lession .lession-sign-up .sign-up a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  background-color: rgb(218, 187, 152);
+  padding: 0 50px;
+  border-radius: 0 0 20px 20px;
+  border: 2px solid black;
+  border-top: none;
+  transition: padding 0.3s, margin 0.3s;
+}
+main .submit-application .container .lessions .lession .lession-sign-up .sign-up a:hover {
+  background-color: rgba(218, 187, 152, 0.722);
+}
+main .submit-application .container .lessions .lession:nth-child(even) .lession-body {
+  background-color: rgba(88, 149, 88, 0.306);
+}
+main .submit-application .container .lessions .lession:nth-child(even) .lession-sign-up .sign-up a {
+  background-color: rgba(88, 149, 88, 0.716);
+}
+main .submit-application .container .lessions .lession:nth-child(even) .lession-sign-up .sign-up a:hover {
+  background-color: rgba(88, 149, 88, 0.572);
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  margin: 25px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .image {
+  margin: 0 auto 25px auto;
+  max-width: 525px;
+}
+footer .image img {
+  border-radius: 20px;
+  margin: 0;
+}
+footer .ask-question,
+footer .start-learning {
+  width: 100%;
+  text-align: center;
+}
+footer .ask-question a,
+footer .start-learning a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(254, 188, 107);
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 25px;
+}
+footer hr {
+  margin: 20px 0;
+}
+footer .copyright {
+  color: rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .container {
+    max-width: 585px;
+  }
+}
+@media (max-width: 585px) {
+  .teacher .container .contact .vk-tg {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  main .teacher .container .photo .cover-text,
+main .what-i-do .container .photo .cover-text,
+main .why-me .container .photo .cover-text,
+main .submit-application .container .photo .cover-text {
+    font-size: 20px;
+  }
+  main .teacher .container p,
+main .what-i-do .container p,
+main .why-me .container p,
+main .submit-application .container p {
+    font-size: 20px;
+  }
+  main .teacher .container ul li,
+main .what-i-do .container ul li,
+main .why-me .container ul li,
+main .submit-application .container ul li {
+    font-size: 20px;
+  }
+  main .teacher .container .contact .vk-tg a,
+main .teacher .container .contact .about-me a,
+main .what-i-do .container .contact .vk-tg a,
+main .what-i-do .container .contact .about-me a,
+main .why-me .container .contact .vk-tg a,
+main .why-me .container .contact .about-me a,
+main .submit-application .container .contact .vk-tg a,
+main .submit-application .container .contact .about-me a {
+    font-size: 20px;
+  }
+  main .teacher .container .lessions .lession div,
+main .what-i-do .container .lessions .lession div,
+main .why-me .container .lessions .lession div,
+main .submit-application .container .lessions .lession div {
+    font-size: 20px;
+  }
+  main .teacher .container .lessions .lession div a,
+main .what-i-do .container .lessions .lession div a,
+main .why-me .container .lessions .lession div a,
+main .submit-application .container .lessions .lession div a {
+    font-size: 20px;
+  }
+}
+@-webkit-keyframes smooth-appierence {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes smooth-appierence {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}/*# sourceMappingURL=index.css.map */

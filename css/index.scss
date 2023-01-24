@@ -1,0 +1,311 @@
+@import url('null-styles.css');
+
+.container {
+    max-width: 620px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+span {
+    color: brown;
+}
+
+.hr {
+    height: 3px;
+    border: none;
+    background-color: brown;
+    margin: 35px 0 0 0;
+}
+
+.smooth-appierence {
+    animation-name: smooth-appierence;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+    .teacher {
+        background-color: rgba(218, 187, 152, 0.33);
+        .container {
+            text-align: center;
+            .photo {
+                height: 500px;
+                border-radius: 0 0 20px 20px;
+                background-image: url('../images/мария.jpg');
+                background-position: top center;
+                position: relative;
+                background-size: cover;
+                overflow: hidden;
+                .cover-text {
+                    color: white;
+                    font-size: 35px;
+                    position: absolute;
+                    bottom: 40px;
+                    background-color: rgba($color: rgb(167, 86, 86), $alpha: 0.5);
+                    width: 100%;
+                }
+            }
+            .fio {
+                font-size: 35px;
+            }
+            .division {
+                margin: 10px 0 0 0;
+                font-size: 35px;
+            }
+            .division,
+            .who-are-teacher {
+                color: brown;
+                font-size: 35px;
+            }
+            .contact {
+                margin: 10px 0 0 0;
+                .vk-tg,
+                .about-me {
+                    display: flex;
+                    a {
+                        flex: 1;
+                        text-decoration: none;
+                        color: white;
+                        background-color: rgb(254, 188, 107);
+                        padding: 15px 30px;
+                        margin: 10px 10px;
+                        border-radius: 20px;
+                        border: 3px solid brown;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 30px;
+                        transition: transform 0.1s;
+                        img {
+                            display: inline-block;
+                            max-width: 40px;
+                            margin: 0 10px;
+                        }
+                    }
+                    a:hover {
+                        transform: translateY(-10px);
+                        background-color: rgb(243, 176, 94);
+                    }
+                }
+                .about-me {
+                    a:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+    .why-me {
+        margin: 30px 0 0 0;
+        .container {
+            .why-me-argument {
+                font-size: 30px;
+                padding: 50px 0 50px 200px;
+                background-image: url('../images/f263ebc2-5ac9-4d3d-abe7-2a40309d7bdd.jfif');
+                background-size: 25%;
+                background-repeat: no-repeat;
+                background-position: center left;
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    margin: 5px 0;
+                    font-size: 25px;
+                    font-style: italic;
+                }
+                li::before {
+                    content: '✓';
+                    margin: 0 5px 0 0;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .submit-application {
+        margin: 30px 0 0 0;
+        .container {
+            > p {
+                font-size: 35px;
+                color: brown;
+            }
+            .lessions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .lession {
+                    margin: 30px 0 0 0;
+                    opacity: 0;
+                    .lession-body {
+                        max-width: 450px;
+                        margin: auto;
+                        height: 370px;
+                        border: 2px solid black;
+                        padding: 30px;
+                        border-radius: 30px;
+                        background-color: rgba(218, 187, 152, 0.33);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        div {
+                            font-size: 25px;
+                        }
+                        .lession-name {
+                            font-weight: 700;
+                        }
+                    }
+                    .lession-sign-up {
+                        position: relative;
+                        .sign-up {
+                            text-align: center;
+                            a {
+                                display: inline-block;
+                                text-decoration: none;
+                                color: black;
+                                font-size: 25px;
+                                background-color: rgb(218, 187, 152);
+                                padding: 0 50px;
+                                border-radius: 0 0 20px 20px;
+                                border: 2px solid black;
+                                border-top: none;
+                                transition: padding 0.3s, margin 0.3s;
+                            }
+                            a:hover {
+                                background-color: rgba(218, 187, 152, 0.722);
+                            }
+                        }
+
+                    }
+                }
+                .lession:nth-child(even) {
+                    .lession-body {
+                        background-color: rgba(88, 149, 88, 0.306);
+                    }
+                    .lession-sign-up {
+                        .sign-up {
+                            a {
+                                background-color: rgba(88, 149, 88, 0.716);
+                            }
+                            a:hover {
+                                background-color: rgba(88, 149, 88, 0.572);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image {
+        margin: 0 auto 25px auto;
+        max-width: 525px;
+        img {
+            border-radius: 20px;
+            margin: 0;
+        }
+    }
+    .ask-question,
+    .start-learning {
+        width: 100%;
+        text-align: center;
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(254, 188, 107);
+            margin: 10px 0;
+            padding: 10px 0;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+    }
+    hr {
+        margin: 20px 0;
+    }
+    .copyright {
+        color: rgba($color: black, $alpha: 0.35);
+        text-align: center;
+    }
+}
+
+@media (max-width:620px) {
+    .container {
+        max-width: 585px;
+    }
+}
+
+
+
+@media (max-width:585px) {
+    .teacher {
+        .container {
+            .contact {
+                .vk-tg {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    main {
+        .teacher,
+        .what-i-do,
+        .why-me,
+        .submit-application {
+            .container {
+                .photo {
+                    .cover-text {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                }
+                ul {
+                    li {
+                        font-size: 20px;
+                    }
+                }
+                .contact {
+                    .vk-tg,
+                    .about-me {
+                        a {
+                            font-size: 20px
+                        }
+                    }
+                }
+                .lessions {
+                    .lession {
+                        div {
+                            font-size: 20px;
+                            a {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes smooth-appierence {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
