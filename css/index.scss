@@ -71,7 +71,6 @@ main {
                         padding: 15px 30px;
                         margin: 10px 10px;
                         border-radius: 20px;
-                        border: 3px solid brown;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -244,11 +243,28 @@ footer {
 
 
 @media (max-width:585px) {
-    .teacher {
-        .container {
-            .contact {
-                .vk-tg {
-                    flex-direction: column;
+    .container {
+        max-width: 450px;
+    }
+    main {
+        .teacher {
+            .container {
+                .contact {
+                    .vk-tg {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        .why-me {
+            .container {
+                .why-me-argument {
+                    font-size: 25px;
+                    padding: 50px 0 50px 130px;
+                    background-image: url('../images/f263ebc2-5ac9-4d3d-abe7-2a40309d7bdd.jfif');
+                    background-size: 25%;
+                    background-repeat: no-repeat;
+                    background-position: center left;
                 }
             }
         }
@@ -258,11 +274,11 @@ footer {
 @media (max-width:450px) {
     main {
         .teacher,
-        .what-i-do,
         .why-me,
         .submit-application {
             .container {
                 .photo {
+                    height: 300px;
                     .cover-text {
                         font-size: 20px;
                     }
@@ -279,19 +295,92 @@ footer {
                     .vk-tg,
                     .about-me {
                         a {
-                            font-size: 20px
-                        }
-                    }
-                }
-                .lessions {
-                    .lession {
-                        div {
                             font-size: 20px;
-                            a {
-                                font-size: 20px;
+                            padding: 5px 0;
+                            img {
+                                max-width: 20px;
                             }
                         }
                     }
+                    .vk-tg {
+                        flex-direction: row;
+                        a {
+                            flex: 1;
+                        }
+                    }
+                }
+                .why-me-argument {
+                    font-size: 20px;
+                    padding: 50px 0 50px 130px;
+                    background-image: url('../images/f263ebc2-5ac9-4d3d-abe7-2a40309d7bdd.jfif');
+                    background-size: 25%;
+                    background-repeat: no-repeat;
+                    background-position: center left;
+                }
+                .lessions {
+                    .lession {
+                        .lession-body {
+                            max-width: 300px;
+                            height: 250px;
+                            div {
+                                font-size: 15px;
+                                p {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        .lession-sign-up {
+                            .sign-up {
+                                a {
+                                    padding: 0 20px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .container {
+            .ask-question,
+            .start-learning {
+                a {
+                    font-size: 20px;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:370px) {
+    .container {
+        max-width: 320px;
+    }
+    main {
+        .teacher,
+        .why-me {
+            .container {
+                .contact {
+                    .vk-tg,
+                    .about-me {
+                        a {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .why-me-argument {
+                    font-size: 20px;
+                    padding: 10px 0 10px 100px;
+                    background-image: url('../images/f263ebc2-5ac9-4d3d-abe7-2a40309d7bdd.jfif');
+                    background-size: 25%;
+                    background-repeat: no-repeat;
+                    background-position: center left;
+                }
+                ul {
+                    padding: 0;
                 }
             }
         }
